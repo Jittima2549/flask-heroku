@@ -29,5 +29,8 @@ def hello():
 def get_api():
     return jsonify(data)
 
+@app.route('/hi')
+@app.route('/hello')
+
 if __name__ == "__main__":
     app.run(debug=False)
